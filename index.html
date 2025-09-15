@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PatriotPlates AI & PatriotSecurity AI Interactive Menu for catering and cybersecurity solutions.">
+  <title>PatriotPlates AI & PatriotSecurity AI Interactive Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="menu">
+    <header>
+      <div class="logo-container">
+        <img src="../images/PatriotPlates-AI-Logo.png" alt="PatriotPlates AI Logo" class="logo">
+        <img src="../images/PatriotSecurity-AI-Logo.png" alt="PatriotSecurity AI Logo" class="logo">
+      </div>
+      <h1>PatriotPlates AI & PatriotSecurity AI</h1>
+      <p class="note">Planned for PatriotPlates AI and PatriotSecurity AI launch</p>
+      <p class="established">Est. 2026</p>
+      <p class="disclaimer">*Prototype for 2026 Launch – Not Available for Purchase*</p>
+      <hr>
+      <button id="toggle-menu" aria-label="Toggle between Catering and Security menus">Switch to Security Menu</button>
+    </header>
+    <main>
+      <section id="catering-menu">
+        <h2>PatriotPlates AI Catering Menu</h2>
+        <img src="../images/PatriotPlates-AI-Logo.png" alt="PatriotPlates AI Logo" class="logo">
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Strawberry Cheesecake Lamb Chops, $25.00, not selected" data-id="lamb-chops" data-creature="StarberryBlaze">
+          <p class="flavor">Strawberry Cheesecake Lamb Chops</p><p class="price">25.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Summer Breeze Burger, $12.50, not selected" data-id="summer-burger" data-creature="BreezeBeef">
+          <p class="flavor">Summer Breeze Burger</p><p class="price">12.50</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Blackberry-Nectarine Salad, $8.00, not selected" data-id="salad" data-creature="NectarineNinja">
+          <p class="flavor">Blackberry-Nectarine Salad</p><p class="price">8.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Patriotic Blackberry-Nectarine Glaze, $10.00, not selected" data-id="glaze" data-creature="PureePython">
+          <p class="flavor">Patriotic Blackberry-Nectarine Glaze</p><p class="price">10.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Nectarine-Blueberry Summer Tart, $15.00, not selected" data-id="summer-tart" data-creature="TartTitan">
+          <p class="flavor">Nectarine-Blueberry Summer Tart</p><p class="price">15.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Long Island Iced Tea Butter Crème Cake, $20.00, not selected" data-id="butter-cake" data-creature="TeaTempest">
+          <p class="flavor">Long Island Iced Tea Butter Crème Cake</p><p class="price">20.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Spiked Banana Nut Bread, $12.00, not selected" data-id="banana-bread" data-creature="BananaBlitz">
+          <p class="flavor">Spiked Banana Nut Bread</p><p class="price">12.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Patriotic Blackberry-Nectarine Glazed Chicken Skewers, $22.00, not selected" data-id="chicken-skewers" data-creature="SkewerSpecter">
+          <p class="flavor">Patriotic Blackberry-Nectarine Glazed Chicken Skewers</p><p class="price">22.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Steak and Fries, $28.00, not selected" data-id="steak-fries" data-creature="SteakStorm">
+          <p class="flavor">Steak and Fries</p><p class="price">28.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Patriotic Sliders, $18.00, not selected" data-id="sliders" data-creature="SliderSentinel">
+          <p class="flavor">Patriotic Sliders</p><p class="price">18.00</p>
+        </article>
+      </section>
+      <section id="security-menu" class="hidden">
+        <h2>PatriotSecurity AI Services</h2>
+        <img src="../images/PatriotSecurity-AI-Logo.png" alt="PatriotSecurity AI Logo" class="logo">
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Firewall Feast, $500.00, not selected" data-id="firewall" data-creature="CryptoShield">
+          <p class="service">Firewall Feast</p><p class="price">500.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Password Protector, $100.00, not selected" data-id="password" data-creature="PassPaladin">
+          <p class="service">Password Protector</p><p class="price">100.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Virus Scanner, $250.00, not selected" data-id="virus-scanner" data-creature="VirusVanguard">
+          <p class="service">Virus Scanner</p><p class="price">250.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Secure Login Demo, $0.00, not selected" data-id="secure-login-demo" data-creature="LoginLore" data-url="https://secure-login-demo-reneemay.netlify.app">
+          <p class="service">Secure Login Demo</p><p class="price">0.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Secure Login Service, $10.00, not selected" data-id="secure-login-service" data-creature="SecureSentinel" data-url="https://secure-login-service-reneemay.netlify.app">
+          <p class="service">Secure Login Service</p><p class="price">10.00</p>
+        </article>
+        <article class="item" tabindex="0" onclick="toggleItem(this)" onkeydown="if(event.key === 'Enter' || event.key === ' ') toggleItem(this)" aria-label="Toggle Threat Intelligence Dashboard, $50.00, not selected" data-id="threat-dashboard" data-creature="ThreatTactician" data-url="https://threat-intelligence-reneemay.netlify.app">
+          <p class="service">Threat Intelligence Dashboard</p><p class="price">50.00</p>
+        </article>
+      </section>
+      <section id="cart">
+        <h2>Cart</h2>
+        <div id="cart-items" aria-live="polite"></div>
+        <p id="total-price" aria-live="polite">Total: $0.00</p>
+      </section>
+      <button onclick="calculateTotal()" aria-label="Calculate total price">Calculate Total</button>
+      <button onclick="resetSelections()" aria-label="Reset all selections">Clear Cart</button>
+      <div id="live-region" aria-live="polite"></div>
+    </main>
+    <hr class="bottom-line">
+    <footer>
+      <h2>Connect with Kenthesha Evans</h2>
+      <div class="social-links">
+        <a href="https://github.com/NaeMay" target="_blank" aria-label="GitHub Profile">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://x.com/Naemay1990" target="_blank" aria-label="X Profile">
+          <i class="fab fa-x-twitter"></i> X
+        </a>
+        <a href="https://www.linkedin.com/in/NaeMay90" target="_blank" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.freecodecamp.org/ReneeMay" target="_blank" aria-label="freeCodeCamp Profile">
+          <i class="fab fa-free-code-camp"></i> freeCodeCamp
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
